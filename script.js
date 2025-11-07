@@ -380,9 +380,9 @@ const translations = {
         'achievements-unlock': 'فتح',
         
         // Footer
-        'footer-dedication': 'لمحمود 🇸🇦',
+        'footer-dedication': 'لماريامي 🇬🇪',
         'footer-quote': 'التعلم هو رحلة، وليس وجهة',
-        'footer-from': 'من نيكو لزميله 🤝',
+        'footer-from': 'بحب من نيكو 💝',
         
         // C1 Preparation
         'c1-ready': 'هل أنت مستعد لامتحان C1؟',
