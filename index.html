@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsch Meistern | B1-C1 Fortgeschritten</title>
+    <link rel="stylesheet" href="../Mari/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                <div class="logo-text">
+                    <span class="logo-title">Deutsch Meistern</span>
+                    <span class="logo-subtitle">Für Mahmoud 🇸🇦</span>
+                </div>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                
+                <nav class="nav" id="mainNav">
+                    <div class="language-switcher">
+                        <button class="lang-btn" data-lang="de">🇩🇪</button>
+                        <button class="lang-btn" data-lang="en">🇬🇧</button>
+                        <button class="lang-btn active" data-lang="ar" style="border: 2px solid #f7b267; font-weight: 700;">🇸🇦</button>
+                    </div>
+                    
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    
+                    <a href="klassenraum.html" class="nav-link">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <span>Klassenraum</span>
+                    </a>
+                    <a href="lektionen.html" class="nav-link">
+                        <i class="fa-solid fa-list"></i>
+                        <span>Alle Lektionen (A1-C2)</span>
+                    </a>
+                    <a href="#vokabeln" class="nav-link">
+                        <i class="fa-solid fa-book"></i>
+                        <span data-translate="nav-vocab">Vokabeln</span>
+                    </a>
+                    <a href="#grammatik" class="nav-link">
+                        <i class="fa-solid fa-language"></i>
+                        <span data-translate="nav-grammar">Grammatik</span>
+                    </a>
+                    <a href="#aussprache" class="nav-link">
+                        <i class="fa-solid fa-microphone"></i>
+                        <span data-translate="nav-pronunciation">Aussprache</span>
+                    </a>
+                    <a href="#ubungen" class="nav-link">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <span data-translate="nav-exercises">Übungen</span>
+                    </a>
+                    <a href="tests.html" class="nav-link">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                        <span data-translate="nav-tests">Tests & C1 Prüfung</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-star"></i>
+                    <span data-translate="hero-badge">Premium Lernplattform</span>
+                </div>
+                <h1 class="hero-title">مرحباً يا محمود! 🇸🇦<br>Willkommen, Mahmoud!</h1>
+                <p class="hero-subtitle" data-translate="hero-subtitle">Deine persönliche Deutsch-Lernplattform</p>
+                <p class="hero-description">Von A1 bis C2 - komplett mit arabischer Übersetzung! Von Nico für seinen Kollegen Mahmoud zusammengestellt. 🤝</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="section">
+        <div class="container">
+            <div class="welcome-card">
+                <div class="welcome-icon">
+                    <i class="fa-solid fa-hand-wave"></i>
+                </div>
+                <div class="welcome-content">
+                    <h2 data-translate="welcome-title">مرحباً يا محمود! Willkommen!</h2>
+                    <p data-translate="welcome-text">Diese komplette Lernplattform wurde von Nico speziell für dich zusammengestellt! Mit vollständiger arabischer Übersetzung (🇸🇦) kannst du von A1 bis C2 alles lernen. Alle Features, alle Tests, alle Spiele - alles für deinen Erfolg! 🤝</p>
+                    <div class="welcome-features">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Komplette Plattform mit arabischer Übersetzung 🇸🇦</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Komplexe Grammatik-Strukturen</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>C1-Prüfungsvorbereitung</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Authentische Texte & Situationen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Vocabulary Section -->
+    <section id="vokabeln" class="section section-alt">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-label"><i class="fa-solid fa-book"></i> Fortgeschrittene Vokabeln</span>
+                <h2 class="section-title">Erweitere deinen Wortschatz</h2>
+                <p class="section-description">Lerne komplexe Vokabeln und Redewendungen für fließende Konversationen</p>
+            </div>
+
+            <!-- B1 Level: Work & Career -->
+            <div class="lesson-card">
+                <div class="lesson-header">
+                    <div class="lesson-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="lesson-info">
+                        <span class="lesson-level level-b1">B1</span>
+                        <h3>Arbeit & Karriere</h3>
+                        <p>Berufsleben, Bewerbung, Arbeitsplatz</p>
+                    </div>
+                </div>
+                
+                <div class="vocab-grid">
+                    <div class="vocab-card-advanced">
+                        <div class="vocab-word-advanced">
+                            <span class="word-german-advanced">die Bewerbung</span>
+                            <button class="audio-btn" onclick="speakWord('die Bewerbung')">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                        <div class="vocab-translation">Application</div>
+                        <div class="vocab-example">
+                            <strong>Beispiel:</strong> "Ich habe meine Bewerbung letzte Woche abgeschickt."
+                        </div>
+                    </div>
+
+                    <div class="vocab-card-advanced">
+                        <div class="vocab-word-advanced">
+                            <span class="word-german-advanced">der Lebenslauf</span>
+                            <button class="audio-btn" onclick="speakWord('der Lebenslauf')">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                        <div class="vocab-translation">CV / Resume</div>
+                        <div class="vocab-example">
+                            <strong>Beispiel:</strong> "Mein Lebenslauf umfasst drei Seiten."
+                        </div>
+                    </div>
+
+                    <div class="vocab-card-advanced">
+                        <div class="vocab-word-advanced">
+                            <span class="word-german-advanced">das Vorstellungsgespräch</span>
+                            <button class="audio-btn" onclick="speakWord('das Vorstellungsgespräch')">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                        <div class="vocab-translation">Job Interview</div>
+                        <div class="vocab-example">
+                            <strong>Beispiel:</strong> "Das Vorstellungsgespräch lief sehr gut."
+                        </div>
+                    </div>
+
+                    <div class="vocab-card-advanced">
+                        <div class="vocab-word-advanced">
+                            <span class="word-german-advanced">die Gehaltsverhandlung</span>
+                            <button class="audio-btn" onclick="speakWord('die Gehaltsverhandlung')">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                        <div class="vocab-translation">Salary Negotiation</div>
+                        <div class="vocab-example">
+                            <strong>Beispiel:</strong> "Die Gehaltsverhandlung war erfolgreich."
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B2 Level: Politics & Society -->
+            <div class="lesson-card">
+                <div class="lesson-header">
+                    <div class="lesson-icon">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+                    <div class="lesson-info">
+                        <span class="lesson-level level-b2">B2</span>
+                        <h3>Politik & Gesellschaft</h3>
+                        <p>Demokratie, soziale Themen, Diskussionen</p>
+                    </div>
+                </div>
+                
+                <div class="vocab-grid">
+                    <div class="vocab-card-advanced">
+                        <div class="vocab-word-advanced">
+                            <span class="word-german-advanced">die Demokratie</span>
+                            <button class="audio-btn" onclick="speakWord('die Demokratie')">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                        <div class="vocab-translation">Democracy</div>
+                        <div class="vocab-example">
+                            <strong>Beispiel:</strong> "Die Demokratie ist die Grundlage unseres Systems."
+                        </div>
+                    </div>
+
+                    <div class="vocab-card-advanced">
+                        <div class="vocab-word-advanced">
+                            <span class="word-german-advanced">die Meinungsfreiheit</span>
+                            <button class="audio-btn" onclick="speakWord('die Meinungsfreiheit')">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                        <div class="vocab-translation">Freedom of Speech</div>
+                        <div class="vocab-example">
+                            <strong>Beispiel:</strong> "Meinungsfreiheit ist ein Grundrecht."
+                        </div>
+                    </div>
+
+                    <div class="vocab-card-advanced">
+                        <div class="vocab-word-advanced">
+                            <span class="word-german-advanced">die Integration</span>
+                            <button class="audio-btn" onclick="speakWord('die Integration')">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                        <div class="vocab-translation">Integration</div>
+                        <div class="vocab-example">
+                            <strong>Beispiel:</strong> "Die Integration in Deutschland braucht Zeit."
+                        </div>
+                    </div>
+
+                    <div class="vocab-card-advanced">
+                        <div class="vocab-word-advanced">
+                            <span class="word-german-advanced">die Vielfalt</span>
+                            <button class="audio-btn" onclick="speakWord('die Vielfalt')">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                        <div class="vocab-translation">Diversity</div>
+                        <div class="vocab-example">
+                            <strong>Beispiel:</strong> "Kulturelle Vielfalt bereichert unsere Gesellschaft."
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C1 Level: Abstract Concepts -->
+            <div class="lesson-card">
+                <div class="lesson-header">
+                    <div class="lesson-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div class="lesson-info">
+                        <span class="lesson-level level-c1">C1</span>
+                        <h3>Abstrakte Konzepte & Idiome</h3>
+                        <p>Fortgeschrittene Ausdrücke, Redewendungen</p>
+                    </div>
+                </div>
+                
+                <div class="vocab-grid">
+                    <div class="vocab-card-advanced">
+                        <div class="vocab-word-advanced">
+                            <span class="word-german-advanced">Das schlägt dem Fass den Boden aus</span>
+                            <button class="audio-btn" onclick="speakWord('Das schlägt dem Fass den Boden aus')">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                        <div class="vocab-translation">That's the last straw</div>
+                        <div class="vocab-example">
+                            <strong>Bedeutung:</strong> Das ist zu viel, das geht zu weit!
+                        </div>
+                    </div>
+
+                    <div class="vocab-card-advanced">
+                        <div class="vocab-word-advanced">
+                            <span class="word-german-advanced">Ich verstehe nur Bahnhof</span>
+                            <button class="audio-btn" onclick="speakWord('Ich verstehe nur Bahnhof')">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                        <div class="vocab-translation">It's all Greek to me</div>
+                        <div class="vocab-example">
+                            <strong>Bedeutung:</strong> Ich verstehe gar nichts!
+                        </div>
+                    </div>
+
+                    <div class="vocab-card-advanced">
+                        <div class="vocab-word-advanced">
+                            <span class="word-german-advanced">Da ist der Wurm drin</span>
+                            <button class="audio-btn" onclick="speakWord('Da ist der Wurm drin')">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                        <div class="vocab-translation">Something's wrong</div>
+                        <div class="vocab-example">
+                            <strong>Bedeutung:</strong> Da stimmt etwas nicht, da ist ein Problem.
+                        </div>
+                    </div>
+
+                    <div class="vocab-card-advanced">
+                        <div class="vocab-word-advanced">
+                            <span class="word-german-advanced">Auf Wolke sieben schweben</span>
+                            <button class="audio-btn" onclick="speakWord('Auf Wolke sieben schweben')">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                        <div class="vocab-translation">To be on cloud nine</div>
+                        <div class="vocab-example">
+                            <strong>Bedeutung:</strong> Sehr glücklich sein, verliebt sein.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Grammar Section -->
+    <section id="grammatik" class="section">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-label"><i class="fa-solid fa-language"></i> Fortgeschrittene Grammatik</span>
+                <h2 class="section-title">Komplexe Strukturen meistern</h2>
+                <p class="section-description">Konjunktiv, Passiv, Nebensätze und mehr</p>
+            </div>
+
+            <div class="grammar-advanced-grid">
+                <!-- Konjunktiv II -->
+                <div class="grammar-advanced-card">
+                    <div class="grammar-advanced-icon">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <h3>Konjunktiv II</h3>
+                    <p class="grammar-desc">Für Wünsche, Hypothesen und höfliche Bitten</p>
+                    
+                    <div class="grammar-examples">
+                        <div class="grammar-example-item">
+                            <strong>Wunsch:</strong> Ich <span class="highlight">wäre</span> gerne reich.
+                        </div>
+                        <div class="grammar-example-item">
+                            <strong>Hypothese:</strong> Wenn ich Zeit <span class="highlight">hätte</span>, <span class="highlight">würde</span> ich reisen.
+                        </div>
+                        <div class="grammar-example-item">
+                            <strong>Höflich:</strong> <span class="highlight">Könnten</span> Sie mir helfen?
+                        </div>
+                    </div>
+                    
+                    <div class="grammar-rules">
+                        <h4>Bildung:</h4>
+                        <ul>
+                            <li>haben → hätte</li>
+                            <li>sein → wäre</li>
+                            <li>können → könnte</li>
+                            <li>würde + Infinitiv (regulär)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Passiv -->
+                <div class="grammar-advanced-card">
+                    <div class="grammar-advanced-icon">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <h3>Passiv</h3>
+                    <p class="grammar-desc">Fokus auf die Handlung statt auf das Subjekt</p>
+                    
+                    <div class="grammar-examples">
+                        <div class="grammar-example-item">
+                            <strong>Aktiv:</strong> Der Lehrer erklärt die Grammatik.
+                        </div>
+                        <div class="grammar-example-item">
+                            <strong>Passiv:</strong> Die Grammatik <span class="highlight">wird erklärt</span>.
+                        </div>
+                        <div class="grammar-example-item">
+                            <strong>Mit Agent:</strong> Die Grammatik <span class="highlight">wird vom Lehrer erklärt</span>.
+                        </div>
+                    </div>
+                    
+                    <div class="grammar-rules">
+                        <h4>Bildung:</h4>
+                        <ul>
+                            <li>werden + Partizip II</li>
+                            <li>Präsens: wird gemacht</li>
+                            <li>Präteritum: wurde gemacht</li>
+                            <li>Perfekt: ist gemacht worden</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Relativsätze -->
+                <div class="grammar-advanced-card">
+                    <div class="grammar-advanced-icon">
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                    <h3>Relativsätze</h3>
+                    <p class="grammar-desc">Zusätzliche Informationen über Nomen</p>
+                    
+                    <div class="grammar-examples">
+                        <div class="grammar-example-item">
+                            <strong>Nominativ:</strong> Der Mann, <span class="highlight">der</span> dort steht, ist mein Chef.
+                        </div>
+                        <div class="grammar-example-item">
+                            <strong>Akkusativ:</strong> Das Buch, <span class="highlight">das</span> ich lese, ist spannend.
+                        </div>
+                        <div class="grammar-example-item">
+                            <strong>Dativ:</strong> Die Frau, <span class="highlight">der</span> ich geholfen habe, ist nett.
+                        </div>
+                    </div>
+                    
+                    <div class="grammar-rules">
+                        <h4>Relativpronomen:</h4>
+                        <ul>
+                            <li>der, die, das (wie Artikel)</li>
+                            <li>welcher, welche, welches (formal)</li>
+                            <li>Verb am Ende des Satzes!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Indirekte Rede -->
+                <div class="grammar-advanced-card">
+                    <div class="grammar-advanced-icon">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <h3>Indirekte Rede</h3>
+                    <p class="grammar-desc">Konjunktiv I für Berichte und Zitate</p>
+                    
+                    <div class="grammar-examples">
+                        <div class="grammar-example-item">
+                            <strong>Direkt:</strong> Er sagt: "Ich bin müde."
+                        </div>
+                        <div class="grammar-example-item">
+                            <strong>Indirekt:</strong> Er sagt, er <span class="highlight">sei</span> müde.
+                        </div>
+                        <div class="grammar-example-item">
+                            <strong>Vergangenheit:</strong> Sie sagte, sie <span class="highlight">habe</span> keine Zeit <span class="highlight">gehabt</span>.
+                        </div>
+                    </div>
+                    
+                    <div class="grammar-rules">
+                        <h4>Konjunktiv I:</h4>
+                        <ul>
+                            <li>sein → sei</li>
+                            <li>haben → habe</li>
+                            <li>können → könne</li>
+                            <li>Wichtig für Nachrichten!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Link to Tests -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-icon">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div class="cta-content">
+                    <h2>Bereit für die C1-Prüfung?</h2>
+                    <p>Teste dein Wissen mit unserer vollständigen C1-Prüfungssimulation!</p>
+                    <a href="../Mari/tests.html#exam" class="btn btn-primary btn-large">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Zur C1-Prüfung
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Deutsch Meistern</h4>
+                    <p>Fortgeschrittene Lernplattform für B1-C1</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <a href="../Mari/lektionen.html">Alle Lektionen</a>
+                    <a href="../Mari/tests.html">Tests</a>
+                    <a href="../Mari/klassenraum.html">Klassenraum</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Deutsch Meistern. Für Mahmoud 🇸🇦 | Von Nico (Kollege) 🤝</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Set Arabic as default for Mahmoud
+        if (!localStorage.getItem('deutschLernenLanguage')) {
+            localStorage.setItem('deutschLernenLanguage', 'ar');
+        }
+        
+        // Speech synthesis
+        function speakWord(word) {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(word);
+                utterance.lang = 'de-DE';
+                utterance.rate = 0.8;
+                speechSynthesis.speak(utterance);
+            }
+        }
+        
+        // Auto-load Arabic on first visit
+        window.addEventListener('load', function() {
+            const lang = localStorage.getItem('deutschLernenLanguage');
+            if (lang === 'ar') {
+                setTimeout(() => changeLanguage('ar'), 100);
+            }
+        });
+    </script>
+</body>
+</html>
+
