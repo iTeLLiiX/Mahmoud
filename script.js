@@ -587,7 +587,10 @@ if ('speechSynthesis' in window) {
 // ============================================
 function updateTotalPoints(points) {
     totalPoints += points;
-    document.getElementById('totalPoints').textContent = totalPoints;
+    const totalPointsEl = document.getElementById('totalPoints');
+    if (totalPointsEl) {
+        totalPointsEl.textContent = totalPoints;
+    }
     saveProgress();
     showPointsAnimation(points);
 }
@@ -870,9 +873,15 @@ function showArticleQuestion() {
     }
     
     const question = articleQuestions[currentArticleQuestion];
-    document.getElementById('quizWord').textContent = question.word;
-    document.getElementById('articleQuestionNum').textContent = currentArticleQuestion + 1;
-    document.getElementById('articleFeedback').innerHTML = '';
+    const quizWordEl = document.getElementById('quizWord');
+    const questionNumEl = document.getElementById('articleQuestionNum');
+    const feedbackEl = document.getElementById('articleFeedback');
+    
+    if (!quizWordEl || !questionNumEl || !feedbackEl) return; // Not on quiz page
+    
+    quizWordEl.textContent = question.word;
+    questionNumEl.textContent = currentArticleQuestion + 1;
+    feedbackEl.innerHTML = '';
     
     document.querySelectorAll('.quiz-option').forEach(btn => {
         btn.classList.remove('correct', 'incorrect');
@@ -1252,11 +1261,11 @@ document.addEventListener('DOMContentLoaded', function() {
         icon.classList.add('fa-sun');
     }
     
-    // Initialize quizzes
-    initArticleQuiz();
-    initMCQuiz();
-    initFlashcards();
-    initCustomAudioUpload();
+    // Initialize quizzes (only if elements exist)
+    if (document.getElementById('quizWord')) initArticleQuiz();
+    if (document.getElementById('mcQuizContainer')) initMCQuiz();
+    if (document.getElementById('flashcard')) initFlashcards();
+    if (document.getElementById('customAudioUpload')) initCustomAudioUpload();
     
     // Initialize NEW features
     initFavorites();
