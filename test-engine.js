@@ -1504,7 +1504,7 @@ function showExamResults() {
                     <div class="exam-certificate">
                         <div class="certificate-content">
                             <h4>Teilnahmebescheinigung</h4>
-                            <p><strong>Mariami</strong></p>
+                            <p><strong>Mahmoud</strong></p>
                             <p>hat erfolgreich die</p>
                             <p><strong>Goethe-Zertifikat C1 Prüfungssimulation</strong></p>
                             <p>absolviert</p>

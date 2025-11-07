@@ -1,0 +1,61 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║      ✅ ALLE "MARIAMI" ZU "MAHMOUD" GEÄNDERT! ✅            ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+
+✅ GEÄNDERTE STELLEN:
+═════════════════════════════════════════════════════
+
+📄 klassenraum.html (8 Änderungen):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ "Folge Mariami's Reise" → "Folge Mahmoud's Reise"
+✅ "Mariami kommt am Flughafen an. Sie..." → "Mahmoud kommt am Flughafen an. Er..."
+✅ "Mariami sucht eine Wohnung. Sie..." → "Mahmoud sucht eine Wohnung. Er..."
+✅ "Mariami beginnt ihren neuen Job" → "Mahmoud beginnt seinen neuen Job"
+✅ "Mariami geht zu einem Sprachtreffen" → "Mahmoud geht zu einem Sprachtreffen"
+✅ "Mariami macht die Prüfung" → "Mahmoud macht die Prüfung"
+✅ "Du (Mariami)" → "Du (Mahmoud)" (2x)
+
+📄 classroom-engine.js (3 Änderungen):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ "Welcome to the Classroom, Mariami!" → "Welcome to the Classroom, Mahmoud!"
+✅ "Follow Mariami's journey" → "Follow Mahmoud's journey"
+✅ "Ich bin Mariami" → "Ich bin Mahmoud"
+
+📄 test-engine.js (1 Änderung):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ "<strong>Mariami</strong>" → "<strong>Mahmoud</strong>"
+
+📄 manifest.json (1 Änderung):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ "für Mariami" → "für Mahmoud"
+
+
+GESAMT: 13 ÄNDERUNGEN ✅
+
+
+🎯 WICHTIGE GRAMMATIK-ANPASSUNGEN:
+═════════════════════════════════════════════════════
+
+Da Mahmoud männlich ist:
+
+❌ "Sie muss..." → ✅ "Er muss..."
+❌ "Sie trifft..." → ✅ "Er trifft..."
+❌ "ihren Job" → ✅ "seinen Job"
+
+
+✅ STATUS:
+═════════════════════════════════════════════════════
+
+ALLE "Mariami" sind jetzt "Mahmoud"! ✅
+Grammatik korrekt angepasst (er/sein statt sie/ihr)! ✅
+Manifest personalisiert! ✅
+Story-Modus personalisiert! ✅
+Spiele personalisiert! ✅
+
+
+Datum: November 2025 ✨
+Status: PERSONALISIERT FÜR MAHMOUD! ✅
+

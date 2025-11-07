@@ -1,7 +1,7 @@
 {
   "name": "Deutsch Meistern - Premium Lernplattform",
   "short_name": "Deutsch Meistern",
-  "description": "Interaktive Deutsch-Lernplattform von A1 bis C1 für Mariami",
+  "description": "Interaktive Deutsch-Lernplattform von A1 bis C1 für Mahmoud",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#1a4a6e",
@@ -49,4 +49,5 @@
     }
   ]
 }
+
 

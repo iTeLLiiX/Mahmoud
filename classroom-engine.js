@@ -10,7 +10,7 @@ const classroomTranslations = {
     },
     en: {
         // Welcome
-        'welcome-classroom': 'Welcome to the Classroom, Mariami!',
+        'welcome-classroom': 'Welcome to the Classroom, Mahmoud!',
         'today-is': 'Today is',
         'ready-to-learn': '- Ready to learn?',
         'daily-motivation': 'The best time to start was yesterday. The second best is now!',
@@ -41,7 +41,7 @@ const classroomTranslations = {
         // Story
         'story-mode': 'Story Mode',
         'learn-through-stories': 'Learn through stories',
-        'mariamis-journey': 'Follow Mariami\'s journey in Germany',
+        'mariamis-journey': 'Follow Mahmoud\'s journey in Germany',
         
         // Daily Challenge
         'daily-challenge': 'Daily Challenge',
@@ -606,7 +606,7 @@ function initSentenceBuilderGame() {
     document.getElementById('gameTitle').textContent = 'Satz-Baumeister';
     
     const sentences = [
-        { words: ['Ich', 'bin', 'Mariami'], correct: 'Ich bin Mariami' },
+        { words: ['Ich', 'bin', 'Mahmoud'], correct: 'Ich bin Mahmoud' },
         { words: ['Guten', 'Morgen', '!'], correct: 'Guten Morgen !' },
         { words: ['Wie', 'geht', 'es', 'dir', '?'], correct: 'Wie geht es dir ?' },
         { words: ['Ich', 'komme', 'aus', 'Georgien'], correct: 'Ich komme aus Georgien' }

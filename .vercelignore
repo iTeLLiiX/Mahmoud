@@ -1,0 +1,21 @@
+# Vercel Ignore File - Don't upload these
+
+# Documentation files
+*.txt
+*.md
+README*
+DEPLOYMENT*
+📖*
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+

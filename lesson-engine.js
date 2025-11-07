@@ -259,3 +259,4 @@ document.addEventListener('DOMContentLoaded', function() {
 window.filterLessons = filterLessons;
 window.openLesson = openLesson;
 
+
